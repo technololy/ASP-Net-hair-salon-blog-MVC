@@ -71,8 +71,11 @@ h6 {
 .blue {
     color: #03D1F5;
 }
-.green {
+.green1 {
     color: #95D500;
+}
+.green {
+    color: #669900;
 }
 .yellow {
     color: #EABB00;
@@ -427,8 +430,10 @@ h6 {
 .fh5co-social li a i {
     font-size: 15px;
 }
+
+/*footer main color controller*/
 #fh5co-footer {
-    background: #323a45;
+    background: #669900;
     color: #878c93;
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 300;
@@ -632,7 +637,7 @@ h2.double:before {
     border-top: none;
 }
 h2.double:after {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid yellow;
     height: 6px;
     content: "";
     position: absolute;
@@ -688,6 +693,7 @@ h2.no-span:before {
 h2.no-span:after {
     left: 1.5%;
 }
+/*navbar primary color controller*/
 .navbar-inverse {
     background-color: #669900;
     background-image: none;

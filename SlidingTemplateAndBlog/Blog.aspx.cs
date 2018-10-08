@@ -11,4 +11,9 @@ public partial class Blog : System.Web.UI.Page
     {
 
     }
+
+    protected void Unnamed_ServerClick(object sender, EventArgs e)
+    {
+
+    }
 }

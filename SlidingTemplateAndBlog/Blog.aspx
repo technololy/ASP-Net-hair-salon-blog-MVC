@@ -86,7 +86,7 @@
                         Want more Bootstrap themes & templates? Subscribe to our mailing list to receive
                         an update when new items arrive!
                     </p>
-                    <a class="btn btn-success" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="btn btn-success" runat="server" onserverclick="Unnamed_ServerClick" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
             </div>
             <!-- /.row -->

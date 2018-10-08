@@ -48,9 +48,9 @@
                 <!-- Left nav -->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.aspx" runat="server">Home</a></li>
-                    <li><a href="services.aspx" runat="server">Services</a></li>
-                    <li><a href="portfolio.aspx" runat="server">Portfolio</a></li>
-                    <li class="dropdown"><a href="blog.aspx" class="dropdown-toggle" data-toggle="dropdown"
+                  <%--  <li><a href="services.aspx" runat="server">Services</a></li>--%>
+                    <li><a href="#" runat="server">Blogs</a></li>
+                <%--    <li class="dropdown"><a href="blog.aspx" class="dropdown-toggle" data-toggle="dropdown"
                         role="button" aria-haspopup="true" aria-expanded="false" runat="server">Blog<span class="caret"
                             runat="server"></span></a>
                         <ul class="dropdown-menu" data-dropdown-in="fadeInUp" data-dropdown-out="fadeOutDown">
@@ -59,8 +59,9 @@
                             <li><a href="#">Something else here</a></li>
                             <li><a href="#">Separated link</a></li>
                         </ul>
-                    </li>
-                    <li><a href="contact.htm" runat="server">Contact</a></li>
+                    </li>--%>
+                    <li><a href="#" runat="server">Contact Us</a></li>
+                    <li><a href="#" runat="server">About Me</a></li>
                     <li>
                         <!-- add search form -->
                         <div class="navbar-form" role="search">
@@ -100,8 +101,8 @@
                             Let your <b class="yellow">smile</b> change the <b class="yellow">world</b><br />
                             <span class="span">Not the world change your smile.</span></h1>
                         <div class="">
-                            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-clear btn-sm btn-min-block">Login</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn btn-clear btn-sm btn-min-block                           ">Registration</asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="btn btn-clear btn-sm btn-min-block">Learn More</asp:HyperLink>
+                          <%--  <asp:HyperLink ID="HyperLink2" runat="server" CssClass="btn btn-clear btn-sm btn-min-block                           ">Registration</asp:HyperLink>--%>
                            </div>
                     </div>
                 </div>
@@ -114,7 +115,7 @@
                             <span class="span">is just a wish</span></h1>
                         <div class="">
                             <asp:HyperLink ID="HyperLink3" runat="server" CssClass="btn btn-clear btn-sm btn-min-block">learn More</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink4" runat="server" CssClass="btn btn-clear btn-sm btn-min-block                           ">Download</asp:HyperLink>
+                          <%--  <asp:HyperLink ID="HyperLink4" runat="server" CssClass="btn btn-clear btn-sm btn-min-block                           ">Download</asp:HyperLink>--%>
                             </div>
                     </div>
                 </div>
@@ -126,8 +127,8 @@
                             You cannot<b class="yellow"> believe</b> in <b class="yellow">God</b><br />
                             <span class="span">until you believe in yourself.</span></h1>
                         <div class="">
-                            <asp:HyperLink ID="HyperLink5" runat="server" CssClass="btn btn-clear btn-sm btn-min-block">Android</asp:HyperLink>
-                            <asp:HyperLink ID="HyperLink6" runat="server" CssClass="btn btn-clear btn-sm btn-min-block                           ">Apple</asp:HyperLink></div>
+                            <asp:HyperLink ID="HyperLink5" runat="server" CssClass="btn btn-clear btn-sm btn-min-block">Learn More</asp:HyperLink>
+                           <%-- <asp:HyperLink ID="HyperLink6" runat="server" CssClass="btn btn-clear btn-sm btn-min-block                           ">Apple</asp:HyperLink>--%></div>
                     </div>
                 </div>
             </div>
@@ -140,7 +141,7 @@
     </div>
     <!-- Carousel -->
     <!-- Service Section -->
-    <section id="services" class="padding50">
+<%--    <section id="services" class="padding50">
         <div class="container">
             <div class="row">
                 <h2 class="background double animated wow fadeInUp" data-wow-delay="0.2s"><span><strong>F</strong>eatures</span></h2>
@@ -221,7 +222,7 @@
         </div>
         <div class="clearfix">
         </div>
-    </section>
+    </section>--%>
     <!-- ./ End Service Section -->
     <!-- Page Content -->
     <div class="padding100" id="blog">
@@ -235,7 +236,8 @@
             </div>
             <!-- /.row -->
             <!-- Project One -->
-            <div class="row">
+            <!-- #region staticBlog comented out. dynamic blog placed here -->
+           <%-- <div class="row">
                 <div class="col-md-7">
                     <a href="#">
                         <img class="img-responsive animated wow fadeInLeft" data-wow-delay="0.2s" src="img/700x300.jpg"
@@ -254,7 +256,11 @@
                     <a class="btn btn-success" href="#">View Project <span class="glyphicon glyphicon-chevron-right">
                     </span></a>
                 </div>
-            </div>
+            </div>--%>
+               <asp:Literal id="literalBlog" Visible="false" runat="server" />
+
+
+            <!-- #endregion -->
             <!-- /.row -->
             <!-- Pagination -->
             <!--<div class="row text-center">
@@ -274,7 +280,7 @@
     </div>
     <!-- /.container -->
     <!-- Products Section -->
-    <section id="products" class="products-list padding100">
+<%--    <section id="products" class="products-list padding100">
         <div class="container">
             <div class="row">
                 <div class="section-title col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
@@ -314,9 +320,9 @@
             </div>
             <!-- ./ end row -->
         </div>
-    </section>
+    </section>--%>
     <!-- Download Section -->
-    <section id="download" class="padding100">
+   <%-- <section id="download" class="padding100">
         <div class="container">
             <div class="row">
                 <div class="section-title col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
@@ -340,7 +346,7 @@
             </div>
             <!-- ./end row -->
         </div>
-    </section>
+    </section>--%>
     <!--End Download Section end-->
     <!-- End Production Section -->
     <footer id="fh5co-footer" class="padding100">
