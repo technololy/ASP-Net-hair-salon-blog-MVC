@@ -15,13 +15,22 @@ public partial class _Default : Page
     string theWholeHtml { get; set; }
     protected void Page_Load(object sender, EventArgs e)
     {
-        var butter = new ButterCMSService();
-        if (butter.blogPost != null && butter.blogPost.Data.Count() > 0)
+        try
         {
-            Session["AllBlogContentList"] = butter.blogPost;
-            SetUpBlogDisplay(butter.blogPost);
-            return;
+            var butter = new ButterCMSService();
+            if (butter.blogPost != null && butter.blogPost.Data.Count() > 0)
+            {
+                Session["AllBlogContentList"] = butter.blogPost;
+                SetUpBlogDisplay(butter.blogPost);
+                return;
+            }
         }
+        catch (Exception)
+        {
+
+           
+        }
+        
 
 
 

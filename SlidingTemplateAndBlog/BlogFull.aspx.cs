@@ -12,5 +12,7 @@ public partial class BlogFull : System.Web.UI.Page
         var paramz = Request.QueryString["slug"];
         var getAllBlogList = Session["AllBlogContentList"] as ButterCMS.Models.PostsResponse;
         var getSingleBlogContent = getAllBlogList.Data.First(x => x.Slug == paramz);
+        bodyPlaceholder.Text = getSingleBlogContent.Body;
+        ImagePlaceHolder.ImageUrl = getSingleBlogContent.FeaturedImage;
     }
 }
